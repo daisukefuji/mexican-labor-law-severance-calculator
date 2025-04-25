@@ -61,7 +61,7 @@ const translations = {
         twenty_days_per_year: "年間20日分 (Separación Unica) ※該当する場合",
         seniority_premium: "勤続年数手当 (Prima de antiguedad)",
         total_severance: "推定解雇補償金合計",
-        disclaimer: "これは概算であり、すべての該当する要素が含まれていない可能性があります。正確な計算については、法律の専門家にご相談ください。",
+        disclaimer: "これは概算であり、有給休暇手当の未払い分 (Prima de vacaciones retenida)、年末手当 (Aguinaldo)等の要素が含まれておりません。正確な計算については、法律の専門家にご相談ください。",
         justified_title_long: "勤続年数手当（正当解雇 - 15年以上）",
         justified_long_disclaimer: "これは15年以上の勤続年数での解雇に適用されます。詳細については、メキシコ連邦労働法をご参照ください。",
         justified_title_short: "勤続年数手当（正当解雇）",

@@ -33,7 +33,7 @@ label {
 
 input[type="number"],
 select {
-    width: calc(100% - 12px);
+    width: calc(100% - 0px);
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -92,7 +92,7 @@ button:hover {
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 15px;
-    width: calc(100% - 12px); /* Added this line to match input width */
+    width: calc(100% - 0px); /* Added this line to match input width */
     box-sizing: border-box; /* Added to include padding and border in width */
 }
 

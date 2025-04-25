@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexico Severance Pay Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <a href="https://github.com/daisukefuji/mexican-labor-law-severance-calculator" class="github-link" target="_blank"
+        rel="noopener noreferrer">
+        GitHub Project
+    </a>
+    <div class="language-selector">
+        <label for="language-select" style="display: none;">Select Language</label>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ja">日本語</option>
+        </select>
+    </div>
+    <div class="container">
+        <h1 data-i18n="title">Mexico Severance Pay Calculator</h1>
+        <div class="input-group">
+            <label for="salary" data-i18n="salary_label">Monthly Salary (MXN):</label>
+            <input type="number" id="salary" min="0">
+        </div>
+
+        <div class="input-group employment-period-group">
+            <label data-i18n="employment_period">Employment Period:</label>
+            <div class="employment-period-inputs">
+                <label for="start_date" data-i18n="start_date_label">Start Date:</label>
+                <input type="date" id="start_date">
+                <label for="end_date" data-i18n="end_date_label">Expected End Date:</label>
+                <input type="date" id="end_date">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="reason" data-i18n="reason_label">Reason for Termination:</label>
+            <select id="reason">
+                <option value="unjustified" data-i18n="unjustified_reason">Unjustified Dismissal</option>
+                <option value="justified" data-i18n="justified_reason">Justified Dismissal</option>
+            </select>
+        </div>
+        <button onclick="calculateSeverance()" data-i18n="calculate_button">Calculate</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            loadTranslations(lang);
+        }
+    </script>
+</body>
+
+</html>

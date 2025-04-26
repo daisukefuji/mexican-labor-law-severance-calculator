@@ -1,0 +1,8 @@
+# robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: https://daisukefuji.github.io/mexican-labor-law-severance-calculator/sitemap.xml

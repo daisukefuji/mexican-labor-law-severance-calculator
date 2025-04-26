@@ -7,6 +7,52 @@
     <title>Mexico Severance Pay Calculator</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FDHKD413J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9FDHKD413J');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const calculateButton = document.querySelector('button[onclick="calculateSeverance()"]');
+
+            if (calculateButton) {
+                calculateButton.addEventListener('click', function() {
+                    const buttonId = this.id;
+                    const buttonText = this.textContent;
+
+                    const ga_salary = document.getElementById('salary').value;
+                    const ga_start_date = document.getElementById('start_date').value;
+                    const ga_end_date = document.getElementById('end_date').value
+                    const ga_reason = document.getElementById('reason').value;
+
+                    gtag('event', 'button_click', {
+                        button_id: buttonId,
+                        button_text: buttonText,
+                        section: 'calculate',
+                        salary: ga_salary,
+                        start_date: ga_start_date,
+                        end_date: ga_end_date,
+                        reason: ga_reason,
+                        timestamp: new Date().toISOString()
+                    });
+
+                    console.log('GA4 event: button_click', {
+                        button_id: buttonId,
+                        button_text: buttonText,
+                        salary: ga_salary,
+                        start_date: ga_start_date,
+                        end_date: ga_end_date,
+                        reason: ga_reason,
+                        timestamp: new Date().toISOString()
+                    });
+                });
+            }
+        });
+    </script><!-- Google tag (gtag.js) -->
 </head>
 
 <body>

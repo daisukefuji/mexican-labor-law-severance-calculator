@@ -37,6 +37,7 @@
                     const ga_start_date = document.getElementById('start_date').value;
                     const ga_end_date = document.getElementById('end_date').value
                     const ga_reason = document.getElementById('reason').value;
+                    const ga_lang = document.getElementById('language-select').value
 
                     gtag('event', 'button_click', {
                         button_id: buttonId,
@@ -46,6 +47,7 @@
                         start_date: ga_start_date,
                         end_date: ga_end_date,
                         reason: ga_reason,
+                        lang: ga_lang,
                         timestamp: new Date().toISOString()
                     });
 
@@ -56,6 +58,7 @@
                         start_date: ga_start_date,
                         end_date: ga_end_date,
                         reason: ga_reason,
+                        lang: ga_lang,
                         timestamp: new Date().toISOString()
                     });
                 });

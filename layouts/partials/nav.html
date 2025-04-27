@@ -1,0 +1,52 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">{{ i18n "toggleNavigation" }}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ .Site.Params.GithubProjUrl }}">{{ .Site.Params.GithubProj }}</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        {{ if .Site.IsMultiLingual }}
+          {{ if ge (len .Site.Languages) 3 }}
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">{{ i18n "languageSwitcherLabel" }}</a>
+              <div class="navlinks-children">
+                {{ range .Site.Languages }}
+                  {{ if not (eq .Lang $.Site.Language.Lang) }}
+                  <a href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </li>
+          {{ else }}
+            <li>
+              {{ range .Site.Languages }}
+                {{ if not (eq .Lang $.Site.Language.Lang) }}
+                  <a href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+                {{ end }}
+              {{ end }}
+            </li>
+          {{ end }}
+        {{ end }}
+
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        {{ if isset .Site.Params "logo" }}
+          <a title="{{ .Site.Title }}" href="{{ "" | absLangURL }}">
+            <img class="avatar-img" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
+          </a>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</nav>

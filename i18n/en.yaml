@@ -1,0 +1,26 @@
+# Content
+- id: dateFormat
+  translation: "January 2, 2006"
+- id: postedOnDate
+  translation: "Posted on"
+- id: translationsLabel
+  translation: "Other languages: "
+- id: translationsSeparator
+  translation: ", "
+- id: title
+  translation: "Mexico Severance Pay Calculator"
+- id: subtitle
+  translation: "A web-based calculator to estimate severance pay amounts accordance with the Mexican Federal Labor Law (Ley Federal del Trabajo)"
+
+# 404 page
+- id: pageNotFound
+  translation: "Whoops, this page doesn't exist. Move along. (404 error)"
+
+# Footer
+
+# Navigation
+- id: toggleNavigation
+  translation: "Toggle navigation"
+- id: languageSwitcherLabel
+  translation: "Language"
+

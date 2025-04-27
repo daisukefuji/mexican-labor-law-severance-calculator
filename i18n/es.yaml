@@ -1,0 +1,25 @@
+# Content
+- id: dateFormat
+  translation: "2006年1月2日"
+- id: postedOnDate
+  translation: "{{ .Count }}に投稿"
+- id: translationsLabel
+  translation: "翻訳："
+- id: translationsSeparator
+  translation: "・"
+- id: title
+  translation: "Calculadora de Indemnización por Despido en México"
+- id: subtitle
+  translation: "Una calculadora web para estimar los montos de indemnización por despido de acuerdo con la Ley Federal del Trabajo mexicana"
+
+# 404 page
+- id: pageNotFound
+  translation: "おっと、このページが存在しない。他にあたってください。（404エラー）"
+
+# Footer
+
+# Navigation
+- id: toggleNavigation
+  translation: "メニューを切り替え"
+- id: languageSwitcherLabel 
+  translation: "Idioma"

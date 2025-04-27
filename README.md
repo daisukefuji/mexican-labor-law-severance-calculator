@@ -11,67 +11,82 @@ This is a web-based calculator designed to estimate the severance pay amounts an
 * Calculates estimated severance pay for both justified and unjustified dismissals.
 * Includes the seniority premium calculation where applicable.
 * Supports multiple languages:
-    * English
-    * Español
-    * 日本語 (Japanese)
+  * English
+  * Español
+  * 日本語 (Japanese)
 * Detects the user's preferred browser language and defaults to English if the language is not supported.
 * Provides clear results with formatted numbers (with thousands separators and two decimal places).
-* User-friendly interface built with HTML, CSS, and JavaScript.
+* User-friendly interface built with Hugo, HTML, CSS, and JavaScript.
 
 ## How to Use
 
-1.  Clone this repository to your local machine:
+1. Clone this repository to your local machine:
     ```bash
     git clone https://github.com/daisukefuji/mexican-labor-law-severance-calculator.git
     ```
 
-2.  Navigate to the project directory:
+2. Navigate to the project directory:
     ```bash
     cd mexican-labor-law-severance-calculator
     ```
 
-3.  Open the `index.html` file in your web browser (or visit the live link above).
+3. Install [Hugo](https://gohugo.io/getting-started/installing/) if you haven't already.
 
-4.  Enter the required information:
-    * **Monthly Salary (MXN):** The employee's gross monthly salary in Mexican Pesos.
-    * **Years of Service:** The total number of years the employee has worked for the company (can include decimal values for partial years).
-    * **Reason for Termination:** Select whether the dismissal was justified or unjustified.
+4. Start the local development server:
+    ```bash
+    hugo server --ignoreCache --disableFastRender
+    ```
+    * Access the local site at [http://localhost:1313](http://localhost:1313).
+    * `--ignoreCache` ensures you're not seeing outdated cached content.
+    * `--disableFastRender` forces Hugo to fully render each time, which helps during theme/template development.
 
-5.  Click the "Calculate" button to see the estimated severance pay.
+5. To generate a static site for production (output to `public/` directory):
+    ```bash
+    hugo
+    ```
+    * After running this command, the complete static site will be available inside the `public/` folder.
+    * You can deploy the contents of the `public/` folder to GitHub Pages or any static hosting service.
 
-6.  Use the language buttons at the top right to switch between English, Spanish, and Japanese.
+## Input Instructions
+
+1. Open the site locally or access the live link.
+2. Enter the required information:
+   * **Monthly Salary (MXN):** The employee's gross monthly salary in Mexican Pesos.
+   * **Years of Service:** The total number of years the employee has worked for the company (partial years allowed).
+   * **Reason for Termination:** Choose between justified or unjustified dismissal.
+
+3. Click the "Calculate" button to see the estimated severance pay.
+
+4. Switch languages using the language selector at the top right.
 
 ## Basis of Calculation (Mexican Labor Law)
 
 The calculations in this tool are based on the following articles of the **Mexican Federal Labor Law (Ley Federal del Trabajo)**:
 
-* **Article 48:** Stipulates the compensation for unjustified dismissal, including three months of salary and twenty days of salary for each year of service.
-* **Article 162:** Outlines the seniority premium (*prima de antigüedad*) which is paid in cases of justified dismissal after 15 years of service, equivalent to twelve days of salary for each year of service.
+* **Article 48:** Compensation for unjustified dismissal, including three months of salary plus twenty days of salary for each year of service.
+* **Article 162:** Seniority premium (*prima de antigüedad*), payable after 15 years of service, equivalent to twelve days of salary for each year.
 
-You can find the official text of the **Mexican Federal Labor Law (Ley Federal del Trabajo)** here:
-
+Official reference:  
 [Ley Federal del Trabajo (Official Link)](https://www.gob.mx/stps/acciones-y-programas/ley-federal-del-trabajo-actualizada)
 
 ## Disclaimer
 
-Please note that this calculator provides an **estimation** based on a simplified interpretation of the Mexican Federal Labor Law. Actual severance pay amounts can vary depending on specific circumstances, individual contracts, and legal interpretations. **Consult with a legal professional for precise calculations and legal advice.**
+This calculator provides an **estimate** based on a simplified interpretation of Mexican labor laws. Actual severance pay may vary depending on contracts, individual circumstances, or legal interpretation. **Consult a legal professional for accurate advice.**
 
 ## Contributing
 
-Contributions to this project are welcome! If you have suggestions, bug reports, or would like to add new features (like support for other aspects of Mexican labor law), please feel free to:
+Contributions are welcome! To contribute:
 
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes.
-4.  Commit your changes.
-5.  Push to the branch.
-6.  Submit a pull request.
+1. Fork the repository.
+2. Create a feature or bugfix branch.
+3. Make and commit your changes.
+4. Push to your branch.
+5. Submit a pull request.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for more information.
+This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for details.
 
 ## Acknowledgements
 
-* This calculator is based on the articles of the [Mexican Federal Labor Law (Ley Federal del Trabajo)](https://www.gob.mx/stps/acciones-y-programas/ley-federal-del-trabajo-actualizada).
-
+* Based on the [Mexican Federal Labor Law (Ley Federal del Trabajo)](https://www.gob.mx/stps/acciones-y-programas/ley-federal-del-trabajo-actualizada).

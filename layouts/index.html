@@ -11,28 +11,28 @@
         -->
         <div class="container-calc">
             <div class="input-group">
-                <label for="salary" data-i18n="salary_label">Monthly Salary (MXN):</label>
+                <label for="salary" data-i18n="salary_label">{{ i18n "salary" }}</label>
                 <input type="number" id="salary" min="0">
             </div>
 
             <div class="input-group employment-period-group">
-                <label data-i18n="employment_period">Employment Period:</label>
+                <label data-i18n="employment_period">{{ i18n "employment period" }}</label>
                 <div class="employment-period-inputs">
-                    <label for="start_date" data-i18n="start_date_label">Start Date:</label>
+                    <label for="start_date" data-i18n="start_date_label">{{ i18n "start date" }}</label>
                     <input type="date" id="start_date">
-                    <label for="end_date" data-i18n="end_date_label">Expected End Date:</label>
+                    <label for="end_date" data-i18n="end_date_label">{{ i18n "expected end date" }}</label>
                     <input type="date" id="end_date">
                 </div>
             </div>
 
             <div class="input-group">
-                <label for="reason" data-i18n="reason_label">Reason for Termination:</label>
+                <label for="reason" data-i18n="reason_label">{{ i18n "reason for termination" }}</label>
                 <select id="reason">
-                    <option value="unjustified" data-i18n="unjustified_reason">Unjustified Dismissal</option>
-                    <option value="justified" data-i18n="justified_reason">Justified Dismissal</option>
+                    <option value="unjustified" data-i18n="unjustified_reason">{{ i18n "unjustified dismissal" }}</option>
+                    <option value="justified" data-i18n="justified_reason">{{ i18n "justified dismissal" }}</option>
                 </select>
             </div>
-            <button onclick="calculateSeverance()" data-i18n="calculate_button">Calculate</button>
+            <button onclick="calculateSeverance()" data-i18n="calculate_button">{{ i18n "calculate" }}</button>
             <div id="result" class="result"></div>
         </div>
 

@@ -11,6 +11,22 @@
   translation: "メキシコ解雇補償金計算ツール"
 - id: subtitle
   translation: "メキシコ連邦労働法（Ley Federal del Trabajo）に基づく解雇手当の概算額を計算するためのウェブベースの計算機"
+- id: salary
+  translation: "月給（MXN）："
+- id: employment period
+  translation: "雇用期間:"
+- id: start date
+  translation: "開始日:"
+- id: expected end date
+  translation: "終了予定日:"
+- id: reason for termination
+  translation: "解雇理由："
+- id: unjustified dismissal
+  translation: "不当解雇"
+- id: justified dismissal
+  translation: "正当解雇"
+- id: calculate
+  translation: "計算"
 
 # 404 page
 - id: pageNotFound

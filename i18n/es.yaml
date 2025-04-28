@@ -11,6 +11,22 @@
   translation: "Calculadora de Indemnización por Despido en México"
 - id: subtitle
   translation: "Una calculadora web para estimar los montos de indemnización por despido de acuerdo con la Ley Federal del Trabajo mexicana"
+- id: salary
+  translation: "Salario Mensual (MXN):"
+- id: employment period
+  translation: "Periodo de Empleo:"
+- id: start date
+  translation: "Fecha de Inicio:"
+- id: expected end date
+  translation: "Fecha de Fin Esperada:"
+- id: reason for termination
+  translation: "Razón de Terminación:"
+- id: unjustified dismissal
+  translation: "Despido Injustificado"
+- id: justified dismissal
+  translation: "Despido Justificado"
+- id: calculate
+  translation: "Calcular"
 
 # 404 page
 - id: pageNotFound

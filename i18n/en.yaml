@@ -11,6 +11,22 @@
   translation: "Mexico Severance Pay Calculator"
 - id: subtitle
   translation: "A web-based calculator to estimate severance pay amounts accordance with the Mexican Federal Labor Law (Ley Federal del Trabajo)"
+- id: salary
+  translation: "Monthly Salary (MXN):"
+- id: employment period
+  translation: "Employment Period:"
+- id: start date
+  translation: "Start Date:"
+- id: expected end date
+  translation: "Expected End Date:"
+- id: reason for termination
+  translation: "Reason for Termination:"
+- id: unjustified dismissal
+  translation: "Unjustified Dismissal"
+- id: justified dismissal
+  translation: "Justified Dismissal"
+- id: calculate
+  translation: "Calculate"
 
 # 404 page
 - id: pageNotFound
